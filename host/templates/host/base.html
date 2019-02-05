@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}{% endblock %} | Auction</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/auction/live">Live Auctions</a></li>
+          <li><a href="/auction/past">Completed Auctions</a></li>
+          <li><a href="/auction/all">All Auctions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h3>
+        {% block heading %}
+        {% endblock %}
+      </h3>
+
+      {% block content %}
+      {% endblock %}
+    </main>
+
+    <footer>
+      <a href="">Footer</a>
+    </footer>
+  </body>
+</html>

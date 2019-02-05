@@ -1,0 +1,24 @@
+{% extends 'host/base.html' %}
+
+{% block title %}
+Past
+{% endblock %}
+
+{% block heading %}
+Past Auctions
+{% endblock %}
+
+{% block content %}
+
+{% if product_live %}
+<ul>
+  {% for product in product_sold %}
+    <li><a href="">{{ product.name }}</a></li>
+  {% endfor %}
+</ul>
+
+{% else %}
+<p>No completed auctions found.</p>
+{% endif %}
+
+{% endblock %}

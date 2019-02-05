@@ -1,0 +1,24 @@
+{% extends 'host/base.html' %}
+
+{% block title %}
+Live
+{% endblock %}
+
+{% block heading %}
+Live Auctions
+{% endblock %}
+
+{% block content %}
+
+{% if product_live %}
+<ul>
+  {% for product in product_live %}
+    <li><a href="">{{ product.name }}</a></li>
+  {% endfor %}
+</ul>
+
+{% else %}
+<p>No auctions live right now</p>
+{% endif %}
+
+{% endblock %}

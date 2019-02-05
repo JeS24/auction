@@ -1,0 +1,24 @@
+{% extends 'host/base.html' %}
+
+{% block title %}
+All
+{% endblock %}
+
+{% block heading %}
+All Auctions
+{% endblock %}
+
+{% block content %}
+
+{% if product_list %}
+  <ul>
+    {% for product in product_list %}
+      <li><a href="">{{ product.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+{% else %}
+<p>No auctions yet.</p>
+{% endif %}
+
+{% endblock %}
