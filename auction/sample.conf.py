@@ -4,7 +4,7 @@ DATABASES = {
         'NAME': 'auction', # name of the database
         'USER': '', # your username here
         'HOST': 'localhost',
-        'PORT': '5432'
+        'PORT': '5432',
         'PASSWORD': '' # your password here
     }
 }
